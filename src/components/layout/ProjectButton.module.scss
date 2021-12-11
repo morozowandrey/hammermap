@@ -1,0 +1,30 @@
+@import "../../styles/media-mixins.scss";
+
+.button {
+	padding: 16px 32px;
+	background-color: #000;
+	border-radius: 40px;
+	color: #fff;
+	border: 1px solid black;
+	width: 100%;
+
+	@include media-breakpoint-down(576) {
+		width: calc(100% - 64px);
+	}
+
+	&:hover {
+		background-color: #fff;
+		color: #000;
+	}
+
+	&-wrapper {
+		width: 100%;
+		display: flex;
+		position: absolute;
+		bottom: 48px;
+
+		@include media-breakpoint-down(812) {
+			max-width: 400px;
+		}
+	}
+}

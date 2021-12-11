@@ -1,0 +1,65 @@
+@import "./media-mixins.scss";
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 100%;
+
+  @include media-breakpoint-down(1440) {
+    max-width: 1440px;
+  }
+  @include media-breakpoint-down(1366) {
+    max-width: 1366px;
+  }
+}
+
+.padding-container {
+  padding: 0px 64px 0px 64px;
+
+  @include media-breakpoint-down(812) {
+    padding: 0px 24px 0px 24px;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.aline-self-baseline {
+  align-self: baseline;
+}
+
+.show {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}

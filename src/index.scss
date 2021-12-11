@@ -1,0 +1,46 @@
+@import "./styles/fonts.scss";
+@import "./styles/var.scss";
+@import "./styles/media-mixins.scss";
+@import "./styles/typographics.scss";
+@import "./styles/helpers.scss";
+
+body {
+  margin: 0;
+  font-family: $main-ff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h2,
+h1 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  outline: none;
+}
+
+main {
+  position: relative;
+}

@@ -1,25 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Fragment } from "react";
+import { Routes, Route } from "react-router-dom";
+// import ScrollToTop from './components/layout/ScrollToTop'
+import Layout from "./components/layout/Layout";
+
+import Home from "./pages/home/Home";
 
 function App() {
+  const routes = [
+    {
+      path: "/",
+      exact: true,
+      main: () => <Home />,
+    },
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Layout>
+        {/* <ScrollToTop> */}
+        <Routes>
+          {routes.map((route, index) => (
+            <Route key={index} path={route.path} element={<route.main />} />
+          ))}
+        </Routes>
+        {/* </ScrollToTop> */}
+      </Layout>
+    </Fragment>
   );
 }
 

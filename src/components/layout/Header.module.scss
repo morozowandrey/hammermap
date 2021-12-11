@@ -1,0 +1,28 @@
+@import "../../styles/media-mixins.scss";
+
+.header {
+	grid-area: header;
+	padding-top: 48px;
+
+	@include media-breakpoint-down(812) {
+		padding-top: 0px;
+	}
+
+	&-text {
+		padding-right: 64px;
+		margin-bottom: 38px;
+
+		@include media-breakpoint-down(1024) {
+			padding-right: 80px;
+		}
+
+		@include media-breakpoint-down(812) {
+			margin-bottom: 24px;
+			padding-right: 0;
+		}
+
+		&__part {
+			text-decoration: underline;
+		}
+	}
+}

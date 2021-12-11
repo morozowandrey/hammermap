@@ -1,0 +1,8 @@
+@import "../../styles/media-mixins.scss";
+
+.layout {
+  display: flex;
+
+  @include media-breakpoint-down(812) {
+  }
+}

@@ -1,0 +1,19 @@
+{
+	"spots": [
+		{
+			"id": "",
+			"name": "",
+			"type": "",
+			"coordinates": "",
+			"address": "",
+			"details": "",
+			"rating": 0,
+			"rideway": 0,
+			"landing": 0,
+			"condition": 0,
+			"availability": 0,
+			"images": [""],
+			"mapDiscription": ""
+		}
+	]
+}
